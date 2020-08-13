@@ -14,7 +14,7 @@ import cucumber.api.java.en.When;
 import io.cucumber.datatable.DataTable;
 
 public class AddCustomerSteps {
-	WebDriver driver;
+	static WebDriver driver;
 
 	@Given("User launch the telecom site")
 	public void user_launch_the_telecom_site() {
