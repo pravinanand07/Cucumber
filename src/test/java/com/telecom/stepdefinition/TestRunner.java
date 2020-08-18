@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features="src//test//resources/Features",
                  glue="com.telecom.stepdefinition",
                  monochrome = true,
-                 plugin="html:target/cucumber-html-reports",
+                 plugin= {"html:target/cucumber-html-reports","json:target/reports.json"},
                  dryRun=false,
                  tags= {"@smoke","@regression"})
 
